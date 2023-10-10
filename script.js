@@ -32,15 +32,17 @@ const lookup = {
 function rot13(encodedStr) {
   let result = "";
   for (let i = 0; i < encodedStr.length; i++) {
-    const char = encodedStr[i];
+
+	  console.log(encodedStr[i]);
+    // const char = encodedStr[i];
     // Check if the character is in the lookup table
-    if (lookup[char] !== undefined) {
-      // Append the decoded character to the result
-      result += lookup[char];
-    } else {
-      // If it's not in the lookup table, append it as is
-      result += char;
-    }
+    // if (lookup[char] !== undefined) {
+    //   // Append the decoded character to the result
+    //   result += lookup[char];
+    // } else {
+    //   // If it's not in the lookup table, append it as is
+    //   result += char;
+    // }
   }
   return result;
 }
